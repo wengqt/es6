@@ -1,0 +1,1 @@
+{"version":3,"sources":["es.js"],"names":[],"mappings":";;AAAA;;;;AAKA,MAAM,GAAN,CAAU;AAAA,SAAM,OAAK,CAAX;AAAA,CAAV","file":"es-compiled.js","sourcesContent":["/**\n * Created by weng on 2016/12/7.\n */\n\n\ninput.map(item=>item+1);\n"]}
