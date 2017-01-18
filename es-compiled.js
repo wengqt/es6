@@ -6,6 +6,8 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 
 var _templateObject = _taggedTemplateLiteral(['Hello ', ',world'], ['Hello ', ',world']);
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -326,5 +328,33 @@ var ht = function ht(head) {
     return [head, tail];
 };
 console.log(ht(1, 2, 3, 4, 5));
+
+function ff(x, y) {
+    return { x: x, y: y };
+}
+
+ff(1, 2);
+
+var lastword = 'last word';
+var obje = _defineProperty({
+    'first word': 'hello'
+}, lastword, 'world');
+console.log(obje['first word']);
+console.log(obje['last word']);
+console.log(obje[lastword]);
+console.log(obje.lastword);
+
+var objj = _defineProperty({}, 'h' + 'ello', function () {
+    return 'hi';
+});
+console.log(objj.hello());
+console.log(objj['hello']);
+console.log(objj['hello']());
+
+var target = { a: 1, b: 1 };
+var source1 = { b: 2, c: 3 };
+var source2 = { c: 3 };
+Object.assign(target, source1, source2);
+console.log(target);
 
 //# sourceMappingURL=es-compiled.js.map

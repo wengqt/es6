@@ -140,3 +140,37 @@ console.log(...go());
 
 const ht = (head,...tail) =>[head,tail];
 console.log(ht(1,2,3,4,5));
+
+
+function ff(x,y){
+    return{x,y};
+}
+
+ff(1,2);
+
+let lastword = 'last word';
+var obje ={
+    'first word':'hello',
+    [lastword]:'world'
+};
+console.log(obje['first word']);
+console.log(obje['last word']);
+console.log(obje[lastword]);
+console.log(obje.lastword);
+
+
+let objj={
+    ['h'+'ello'](){
+        return 'hi';
+    }
+};
+console.log(objj.hello());
+console.log(objj['hello']);
+console.log(objj['hello']());
+
+var target = {a:1,b:1};
+var source1 ={b:2,c:3};
+var source2 = {c:3};
+Object.assign(target,source1,source2);
+console.log(target);
+
